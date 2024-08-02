@@ -67,7 +67,7 @@ for root, dirs, files in os.walk("."):
     print(f"Files: {files}")
 ```
 
-> [! important]
+> [!important]
 > **Explanation:**
 > 1. `os.path.join(".")` combines directory and file names into a single path.
 >2. `os.path.exists("file.txt")` checks if a file or directory exists.

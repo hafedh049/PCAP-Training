@@ -76,7 +76,7 @@ In this example:
 - **`divide_numbers_custom`** function raises these custom exceptions based on the input conditions.
 - **`try-except`** block catches the custom exceptions and handles them appropriately.
 
-> [! important]
+> [!important]
 > - **'try'** block must be either with finally or with except or with both
 > - **'else'** is executed if there is no exception
 > - **'finally'** is executed no matter what happens even if you call **'return'**, **'quit()'** or **'exit()'** 

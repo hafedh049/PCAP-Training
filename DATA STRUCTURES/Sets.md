@@ -65,7 +65,7 @@ print(s1.intersection(s2))
 
 ## Difference of sets
 
-> [! note]
+> [!note]
 > - Difference means items that exists in **s1** and do not exists is **s2**
 
 ```python
@@ -79,8 +79,9 @@ print(s1.difference(s2))
 
 ## Symmetric Difference of sets
 
-> [! note]
+> [!note]
 > - Symmetric Difference means the inverse of the intersection
+
 ```python
 s1 = {1, 2, 3}
 s2 = {3, 4, 5, 6}
@@ -116,7 +117,7 @@ s2 = s1.copy()
 
 ## Check if a set is a SUPER-SET
 
-> [! important]
+> [!important]
 > In set theory, a set $A$ is considered a **superset** of another set $B$ if all elements of $B$ are also elements of $A$. This means that $A$ contains all elements of $B$, and possibly more. If $A$ is a superset of $B$, it can be denoted as $A ⊇ B$.
 
 ```python
@@ -128,7 +129,7 @@ print(s1.issuperset(s2))
 
 ## Check if a set is a SUB-SET
 
-> [! important]
+> [!important]
 > In set theory, a set $A$ is considered a **subset** of another set $B$ if all elements of $A$ are also elements of $B$. This means that $B$ contains all elements of $A$, and possibly more. If $A$ is a subset of $B$, it can be denoted as $B ⊇ A$.
 
 ```python
@@ -140,7 +141,7 @@ print(s1.issubset(s2))
 
 ## Check if two sets are disjoint
 
-> [! important]
+> [!important]
 > In set theory, a set $A$ and $B$ are considered **DISJOINT**. If their **intersection** is the empty set $\emptyset$
 
 ```python
