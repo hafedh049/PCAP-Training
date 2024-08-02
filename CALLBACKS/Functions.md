@@ -4,6 +4,7 @@
 def my_func():
 	...
 # This is a function called 'my_func' and it has no parameters and no body
+# By default if there is no return inside the callback it will return 'None'
 
 def fib(n):
 	if n in [0,1]:
