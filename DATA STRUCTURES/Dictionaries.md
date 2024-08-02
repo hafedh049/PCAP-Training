@@ -1,4 +1,4 @@
-> [! important]
+> [!important]
 > - Dictionaries are HashMaps (K-V paires) stores in a single container and linked by nodes
 > - Dictionaries keys can be only of immutable types **(int, complex, str, None, bool, tuple, callbacks, classes, frozensets)**
 > - Dictionaries ignores duplicating keys
