@@ -13,7 +13,7 @@ def fib(n):
 		return fib(n - 1) + fib(n - 2)
 # This is a recursive fibonacci function
 
-def f(x,y,*args,*kwargs, z = None):
+def f(x,y,*args,**kwargs, z = None):
 	...
 
 f(1, 2, [], "", a = 12, z = None)

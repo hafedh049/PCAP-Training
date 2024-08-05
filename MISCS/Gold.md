@@ -272,7 +272,7 @@ result = ~a
 print(result)  # Output: -13 (binary: ...11100101, due to two's complement representation)
 ```
 
-### 5. **Bitwise Left Shift (`<<`)**
+### 5. **Bitwise Left Shift (`<<`)** $a << b = a * 2^b$
 
 The bitwise left shift operator shifts the bits of its first operand to the left by the number of positions specified by its second operand. The empty positions on the right are filled with zeros.
 
@@ -286,7 +286,7 @@ result = a << shift
 print(result)  # Output: 48 (binary: 110000)
 ```
 
-### 6. **Bitwise Right Shift (`>>`)**
+### 6. **Bitwise Right Shift (`>>`) $a << b =\frac{a}{2^b}$**
 
 The bitwise right shift operator shifts the bits of its first operand to the right by the number of positions specified by its second operand. The empty positions on the left are filled with the sign bit (for signed integers) or zeros (for unsigned integers).
 
@@ -477,6 +477,7 @@ type_dict = {
     frozenset((1, 2, 3, 1)): 0,
     0.0: "",
     0: "",
+    '':'',
     lambda x: x: "callback",  # A simple callable object
 }
 
@@ -807,6 +808,79 @@ Here are some commonly used built-in functions:
 
 These functions and operations are foundational to effective programming in Python and are useful in various scenarios for data manipulation and analysis.
 
+Certainly! Here are examples that demonstrate the use of `isinstance` and `issubclass` functions in Python.
+
+### `isinstance`
+
+The `isinstance` function checks if an object is an instance of a class or a tuple of classes.
+
+**Syntax:**
+```python
+isinstance(object, classinfo)
+```
+
+**Example 1: Checking instance of a single class**
+```python
+class Animal:
+    pass
+
+class Dog(Animal):
+    pass
+
+dog = Dog()
+
+# Check if 'dog' is an instance of Dog
+print(isinstance(dog, Dog))  # Output: True
+
+# Check if 'dog' is an instance of Animal
+print(isinstance(dog, Animal))  # Output: True
+
+# Check if 'dog' is an instance of str
+print(isinstance(dog, str))  # Output: False
+```
+
+**Example 2: Checking instance against a tuple of classes**
+```python
+class Cat(Animal):
+    pass
+
+cat = Cat()
+
+# Check if 'cat' is an instance of Dog or Cat
+print(isinstance(cat, (Dog, Cat)))  # Output: True
+
+# Check if 'cat' is an instance of Dog or str
+print(isinstance(cat, (Dog, str)))  # Output: False
+```
+
+### `issubclass`
+
+The `issubclass` function checks if a class is a subclass of another class or a tuple of classes.
+
+**Syntax:**
+```python
+issubclass(class, classinfo)
+```
+
+**Example 1: Checking subclass of a single class**
+```python
+# Check if Dog is a subclass of Animal
+print(issubclass(Dog, Animal))  # Output: True
+
+# Check if Animal is a subclass of Dog
+print(issubclass(Animal, Dog))  # Output: False
+```
+
+**Example 2: Checking subclass against a tuple of classes**
+```python
+# Check if Cat is a subclass of Animal or Dog
+print(issubclass(Cat, (Animal, Dog)))  # Output: True
+
+# Check if Animal is a subclass of Dog or str
+print(issubclass(Animal, (Dog, str)))  # Output: False
+```
+
+These examples illustrate how to use `isinstance` to verify if an object belongs to a specific class or set of classes, and how to use `issubclass` to determine if a class is a derived class of another class or set of classes.
 
 https://www.dumpsbase.com/freedumps/python-institute/pcap
 https://www.itexams.com/exam/PCAP
