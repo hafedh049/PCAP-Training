@@ -77,6 +77,7 @@ In this example:
 - **`try-except`** block catches the custom exceptions and handles them appropriately.
 
 > [!important]
-> - **'try'** block must be either with finally or with except or with both
+> - **'try'** block must be either with **finally** or with **except** or with both but not with **else**
 > - **'else'** is executed if there is no exception
 > - **'finally'** is executed no matter what happens even if you call **'return'**, **'quit()'** or **'exit()'** 
+> - except hierarchy must be from **specific** to **general**
