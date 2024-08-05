@@ -1,24 +1,5 @@
 
 > [!important]
-> ### Question 51 ( Exam A )
-> Assuming that the snippet below has been executed successfully, which of the following expressions will evaluate to True? (Select two answers)
-> 
-> ```python
-> string = 'python'[::2]
-> string = string[-1] + string[-2]
-> ```
-> 
-> - **A.** `string[0] == string[-1]`
-> - **B.** `string is None`
-> - **C.** `len(string) == 3`
-> - **D.** `string[0] == 'o'`
-> 
-> >[!note]- Responses
-> >- A $\color{green}\checkmark$
-> >- C $\color{green}\checkmark$
-
-
-> [!important]
 > ### Question 52 ( Exam A )
 > The following class definition is given:
 > 
@@ -148,7 +129,7 @@ Here’s the formatted question:
 > - **D.** `a, b, c = a, b, c`
 > 
 > >[!note]- Responses
-> >- B $\color{green}\checkmark$
+> >- A $\color{green}\checkmark$
 > >- C $\color{green}\checkmark$
 
 
@@ -339,4 +320,3 @@ Here’s the formatted question:
 > >[!note]- Responses
 > >- A $\color{green}\checkmark$
 > >- B $\color{green}\checkmark$
-

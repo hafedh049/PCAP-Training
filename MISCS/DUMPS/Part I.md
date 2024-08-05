@@ -9,6 +9,7 @@
 >  >[!note]- Responses
 >  >- A $\color{green}\checkmark$
 >  >- D $\color{green}\checkmark$
+>  >- C $\color{green}\checkmark$
 >  
 
 Got it! Here's the corrected format with the responses belonging to the `Responses` collapsible section:
@@ -124,7 +125,7 @@ Here’s the formatted question using your template:
 > - **D.** it outputs 0
 > 
 > >[!note]- Responses
-> >- A $\color{green}\checkmark$
+> >- C $\color{green}\checkmark$
 
 
 > [!important]
@@ -323,7 +324,7 @@ Here’s the formatted question using your template:
 > - **D.** it raises an exception
 > 
 > >[!note]- Responses
-> >- B $\color{green}\checkmark$
+> >- A $\color{green}\checkmark$
 
 
 > [!important]
@@ -341,20 +342,6 @@ Here’s the formatted question using your template:
 
 
 > [!important]
-> ### Question 17 ( Exam A )
-> Which of the following expressions evaluate to True? (Choose two.)
-> 
-> - **A.** `'in' in 'in'`
-> - **B.** `'in' in 'Thames'`
-> - **C.** `'in not' in 'not'`
-> - **D.** `'t'.upper() in 'Thames'`
-> 
-> >[!note]- Responses
-> >- A $\color{green}\checkmark$
-> >- D $\color{green}\checkmark$
-
-
-> [!important]
 > ### Question 18 ( Exam A )
 > Assuming that the snippet below has been executed successfully, which of the following expressions will evaluate to True? (Choose two.)
 > 
@@ -365,7 +352,7 @@ Here’s the formatted question using your template:
 > 
 > - **A.** `len(string) == 3`
 > - **B.** `string[0] == 'o'`
-> - **C.** `string[0] == string[-1]`
+> - **C.** `string[0] != string[-1]`
 > - **D.** `string is None`
 > 
 > >[!note]- Responses
@@ -406,9 +393,10 @@ Here’s the formatted question using your template:
 > 
 > ```python
 > class Class:
->    var data
+>    var = data = 1
 >    def __init__(self, value):
 >        self.prop = value
+>        1 == 1 ==1 
 > Object = Class(2)
 > ```
 > 
@@ -509,11 +497,13 @@ Here’s the formatted question using your template:
 >    VarA = 1
 >    def __init__(self):
 >        self.prop_a = 1
+>        
 > class B(A):
 >    VarA = 2
 >    def __init__(self):
 >        super().__init__()
 >        self.prop_b = 2
+>        
 > obj_a = A()
 > obj_aa = A()
 > obj_b = B()
@@ -594,10 +584,12 @@ Here’s the formatted question using your template:
 >    Variable = 0
 >    def __init__(self):
 >        self.value = 0
+>        
 > object_1 = Class()
 > Class.Variable += 1
 > object_2 = Class()
 > object_2.value += 1
+> 
 > print(object_2.Variable + object_1.value)
 > ```
 > 
@@ -621,7 +613,7 @@ Here’s the formatted question using your template:
 > 
 > >[!note]- Responses
 > >- B $\color{green}\checkmark$
-> >- D $\color{green}\checkmark$
+> >- C $\color{green}\checkmark$
 
 
 > [!important]
@@ -635,7 +627,7 @@ Here’s the formatted question using your template:
 > 
 > >[!note]- Responses
 > >- A $\color{green}\checkmark$
-> >- C $\color{green}\checkmark$
+> >- B $\color{green}\checkmark$
 
 
 > [!important]
@@ -665,11 +657,10 @@ Here’s the formatted question using your template:
 > >- C $\color{green}\checkmark$
 > >- D $\color{green}\checkmark$
 
-Here’s the formatted question:
 
 > [!important]
 > ### Question 33 ( Exam A )
-> Which of the following snippets will execute without raising any unhandled exceptions? (Select answers)
+> Which of the following snippets will execute without raising any unhandled exceptions? 
 > 
 > - **A.**
 > 
@@ -709,19 +700,18 @@ Here’s the formatted question:
 > 
 > ```python
 > try:
->    print(float("le1"))
+>    print(float("-inf"))
 > except (NameError, SystemError):
 >    print(float("1a1"))
 > else:
->    print(float("1c1"))
+>    print(float("inf"))
 > ```
 > 
 > >[!note]- Responses
 > >- C $\color{red}\checkmark$
-> >
+> >- D $\color{red}\checkmark$
 > 
 
-Here’s the formatted question:
 
 > [!important]
 > ### Question 34 ( Exam A )
@@ -758,7 +748,7 @@ Here’s the formatted question:
 > - **D.** it raises an exception
 > 
 > >[!note]- Responses
-> >- B $\color{green}\checkmark$
+> >- A $\color{green}\checkmark$
 
 
 > [!important]
@@ -889,7 +879,7 @@ Here’s the formatted question:
 > - **D.** 2 3
 > 
 > >[!note]- Responses
-> >- A $\color{green}\checkmark$
+> >- C $\color{green}\checkmark$
 
 
 > [!important]
@@ -1025,5 +1015,4 @@ Here’s the formatted question:
 > - **D.** it outputs [0, 1, 2, 3, 4]
 > 
 > >[!note]- Responses
-> >- A $\color{green}\checkmark$
-
+> >- C $\color{green}\checkmark$
