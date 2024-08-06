@@ -1517,6 +1517,44 @@ In Python, boolean values can be used in arithmetic operations with integers, as
 
 In the examples involving division or modulus by `False`, a `ZeroDivisionError` will be raised since these operations are equivalent to dividing or taking modulus by zero.
 
+In Python, multiplying a string by a negative number results in an empty string. Therefore, you cannot directly use a negative number to repeat a string. However, if you want to print an infinite number of "m" in a single print statement, you can use a loop or another method to simulate an infinite print (though this will be an infinite loop and should be handled carefully).
+
+Here are examples illustrating both points:
+
+1. **Multiplying a string by a negative number**:
+   ```python
+   result = "hello" * -3
+   print(result)  # Output: ""
+   ```
+
+2. **Printing an infinite number of "m"**:
+   ```python
+   # Approach 1: Using a loop (will print indefinitely)
+   while True:
+       print("m", end="")
+   ```
+
+3. **Using a generator to simulate infinite printing in a more controlled way**:
+   ```python
+   import itertools
+
+   # Approach 2: Using itertools to repeat "m" indefinitely
+   infinite_m = itertools.cycle("m")
+   for char in infinite_m:
+       print(char, end="")
+   ```
+
+4. **Using recursion to simulate an infinite loop (not recommended due to stack overflow)**:
+   ```python
+   def infinite_m():
+       print("m", end="")
+       infinite_m()  # Recursive call
+
+   infinite_m()
+   ```
+
+For safety and to avoid crashing your environment, you should be careful with infinite loops. If you run these examples, especially the loop-based ones, be prepared to stop the execution manually.
+
 https://www.dumpsbase.com/freedumps/python-institute/pcap
 
 https://www.itexams.com/exam/PCAP
