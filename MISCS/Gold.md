@@ -1465,6 +1465,58 @@ while True:
 - **Iterators**: Implement the `__iter__()` and `__next__()` methods to create custom iterators.
 - **`iter()` and `next()`**: Use these functions to iterate over an iterable manually.
 
+In Python, boolean values can be used in arithmetic operations with integers, as `True` and `False` are equivalent to `1` and `0`, respectively. Here are some examples:
+
+1. **Addition**:
+   ```python
+   result = 1 + True
+   print(result)  # Output: 2
+   ```
+
+2. **Subtraction**:
+   ```python
+   result = 5 - False
+   print(result)  # Output: 5
+   ```
+
+3. **Multiplication**:
+   ```python
+   result = 3 * True
+   print(result)  # Output: 3
+   ```
+
+4. **Division**:
+   ```python
+   result = 10 / False
+   # This will raise a ZeroDivisionError because dividing by False is equivalent to dividing by 0.
+   ```
+
+5. **Exponentiation**:
+   ```python
+   result = 2 ** True
+   print(result)  # Output: 2
+   ```
+
+6. **Modulus**:
+   ```python
+   result = 5 % False
+   # This will raise a ZeroDivisionError because modulus by False is equivalent to modulus by 0.
+   ```
+
+7. **Floor Division**:
+   ```python
+   result = 7 // True
+   print(result)  # Output: 7
+   ```
+
+8. **Using booleans in complex expressions**:
+   ```python
+   result = (10 + True) * 2 - (5 / True)
+   print(result)  # Output: 17.0
+   ```
+
+In the examples involving division or modulus by `False`, a `ZeroDivisionError` will be raised since these operations are equivalent to dividing or taking modulus by zero.
+
 https://www.dumpsbase.com/freedumps/python-institute/pcap
 
 https://www.itexams.com/exam/PCAP

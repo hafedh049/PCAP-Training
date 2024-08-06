@@ -12,7 +12,6 @@
 >  >- C $\color{green}\checkmark$
 >  
 
-Got it! Here's the corrected format with the responses belonging to the `Responses` collapsible section:
 
 > [!important]
 > ### Question 2 ( Exam A )
@@ -31,6 +30,7 @@ Got it! Here's the corrected format with the responses belonging to the `Respons
 > 
 > >[!note]- Responses
 > >- B $\color{green}\checkmark$
+
 
 > [!important]
 > ### Question 3 ( Exam A )
@@ -51,6 +51,7 @@ Got it! Here's the corrected format with the responses belonging to the `Respons
 > >- A $\color{green}\checkmark$
 > >- D $\color{green}\checkmark$
 
+
 > [!important]
 > ### Question 4 ( Exam A )
 > Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True? (Choose two.)
@@ -67,6 +68,7 @@ Got it! Here's the corrected format with the responses belonging to the `Respons
 > >[!note]- Responses
 > >- C $\color{green}\checkmark$
 > >- D $\color{green}\checkmark$
+
 
 > [!important]
 > ### Question 5 ( Exam A )
@@ -88,6 +90,7 @@ Got it! Here's the corrected format with the responses belonging to the `Respons
 > >- A $\color{green}\checkmark$
 > >- B $\color{green}\checkmark$
 
+
 > [!important]
 > ### Question 6 ( Exam A )
 > Which one of the platform module functions should be used to determine the underlying platform name?
@@ -100,7 +103,6 @@ Got it! Here's the corrected format with the responses belonging to the `Respons
 > >[!note]- Responses
 > >- D $\color{green}\checkmark$
 
-Here’s the formatted question using your template:
 
 > [!important]
 > ### Question 7 ( Exam A )
