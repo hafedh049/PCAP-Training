@@ -898,7 +898,7 @@ bin(number)
 number = 10
 binary = bin(number)
 print(binary)  # Output: '0b1010'
-print(0x_1_1)
+print(0b_1_1)
 ```
 
 ### `hex`
