@@ -8,9 +8,9 @@ Here's the PCAP Training guide:
    - [Download Obsidian](https://obsidian.md/download)
    - Follow the installation instructions for your operating system.
 
-2. **Download the Folder**
-   - [Download the Folder](https://drive.google.com/drive/folders/1bfUGTkrj2vldQ6VR1NqNAJgkkGrMKFOc?usp=sharing) from Google Drive.
-
+2. **Clone the Repository**
+   - ...
+   
 3. **Setup Your Vault**
    - Drag and drop the downloaded folder into your Obsidian Vault located in `/Documents/Obsidian Vault`.
 
