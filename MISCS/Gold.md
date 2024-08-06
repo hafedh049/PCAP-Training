@@ -286,7 +286,7 @@ result = a << shift
 print(result)  # Output: 48 (binary: 110000)
 ```
 
-### 6. **Bitwise Right Shift (`>>`) $a << b =\frac{a}{2^b}$**
+### 6. **Bitwise Right Shift (`>>`) $a >> b =\frac{a}{2^b}$**
 
 The bitwise right shift operator shifts the bits of its first operand to the right by the number of positions specified by its second operand. The empty positions on the left are filled with the sign bit (for signed integers) or zeros (for unsigned integers).
 
@@ -898,6 +898,7 @@ bin(number)
 number = 10
 binary = bin(number)
 print(binary)  # Output: '0b1010'
+print(0x_1_1)
 ```
 
 ### `hex`
@@ -914,6 +915,7 @@ hex(number)
 number = 255
 hexadecimal = hex(number)
 print(hexadecimal)  # Output: '0xff'
+print(0x_11)
 ```
 
 ### `oct`
@@ -930,6 +932,7 @@ oct(number)
 number = 64
 octal = oct(number)
 print(octal)  # Output: '0o100'
+print(0o11)
 ```
 
 ### `chr`
@@ -1338,6 +1341,129 @@ def greet(name: str, title: Optional[str] = None) -> str:
 print(greet("Alice"))          # Output: Hello, Alice!
 print(greet("Alice", "Dr."))   # Output: Hello, Dr. Alice!
 ```
+
+### `itertools.combinations` and `itertools.permutations`
+
+The `itertools` module in Python provides a set of fast, memory-efficient tools for working with iterators. Two useful functions from this module are `combinations` and `permutations`.
+
+#### `itertools.combinations`
+
+The `combinations` function returns all possible combinations of a specified length from the input iterable.
+
+```python
+import itertools
+
+data = ['A', 'B', 'C']
+combinations = list(itertools.combinations(data, 2))
+print(combinations)  # [('A', 'B'), ('A', 'C'), ('B', 'C')]
+```
+
+#### `itertools.permutations`
+
+The `permutations` function returns all possible permutations of a specified length from the input iterable.
+
+```python
+import itertools
+
+data = ['A', 'B', 'C']
+permutations = list(itertools.permutations(data, 2))
+print(permutations)  # [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
+```
+
+### Generators
+
+A generator in Python is a special type of iterator that yields items one at a time and only when required, using the `yield` keyword. Generators are a great way to handle large datasets without consuming a lot of memory.
+
+#### Creating a Generator
+
+Here’s a simple example of a generator that yields numbers from 0 to n:
+
+```python
+def simple_generator(n):
+    i = 0
+    while i < n:
+        yield i
+        i += 1
+
+gen = simple_generator(5)
+for value in gen:
+    print(value)  # Output: 0 1 2 3 4
+```
+
+#### Converting a Generator to an Iterator
+
+Generators are inherently iterators, so you can use the `iter` function on them directly.
+
+```python
+gen = simple_generator(3)
+iter_gen = iter(gen)
+print(next(iter_gen))  # Output: 0
+print(next(iter_gen))  # Output: 1
+```
+
+### Implementing an Iterator
+
+An iterator in Python needs to implement two methods: `__iter__()` and `__next__()`.
+
+Here's an example of a custom iterator that returns even numbers up to a given limit:
+
+```python
+class EvenNumbers:
+    def __init__(self, max):
+        self.max = max
+        self.n = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.n <= self.max:
+            result = self.n
+            self.n += 2
+            return result
+        else:
+            raise StopIteration
+
+even_numbers = EvenNumbers(10)
+for num in even_numbers:
+    print(num)  # Output: 0 2 4 6 8 10
+```
+
+### Using `iter()` and `next()`
+
+The `iter()` function returns an iterator from an iterable, and the `next()` function retrieves the next item from the iterator.
+
+#### Example:
+
+```python
+my_list = [10, 20, 30, 40]
+my_iter = iter(my_list)
+
+print(next(my_iter))  # Output: 10
+print(next(my_iter))  # Output: 20
+print(next(my_iter))  # Output: 30
+print(next(my_iter))  # Output: 40
+```
+
+If you call `next()` and there are no more items to return, it raises a `StopIteration` exception. To handle this gracefully, you can use a loop or try-except block.
+
+```python
+my_iter = iter(my_list)
+
+while True:
+    try:
+        print(next(my_iter))
+    except StopIteration:
+        break
+```
+
+### Summary
+
+- **`itertools.combinations`**: Generates all possible combinations of a specified length from the input iterable.
+- **`itertools.permutations`**: Generates all possible permutations of a specified length from the input iterable.
+- **Generators**: Use the `yield` keyword to create an iterator. Generators are memory efficient.
+- **Iterators**: Implement the `__iter__()` and `__next__()` methods to create custom iterators.
+- **`iter()` and `next()`**: Use these functions to iterate over an iterable manually.
 
 https://www.dumpsbase.com/freedumps/python-institute/pcap
 
